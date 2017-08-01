@@ -20,12 +20,15 @@ namespace human
             health = myHealth;
 
         }
-        public void attack(object target){
-            Human enemy = target as Human;
-            if(enemy != null) {
-                enemy.health -= 5 * strength;
-            }
+        public void Attack(Human enemy){
+            enemy.health -= 5 * strength;
         }
+        // public void attack(object target){
+        //     Human enemy = target as Human;
+        //     if(enemy != null) {
+        //         enemy.health -= 5 * strength;
+        //     }
+        // }
     }
 }
 
